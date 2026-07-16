@@ -1,4 +1,14 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Proyecto Dipa | Redwood Capital Partners</title><link rel="stylesheet" href="styles.css"></head><body>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Proyecto Dipa | Redwood Capital Partners</title><link rel="stylesheet" href="styles.css"></head><script>
+  const password = prompt("Ingresa la contraseña para acceder:");
+
+  if (password !== "shermaster") {
+    document.body.innerHTML =
+      "<div style='font-family:Arial;text-align:center;margin-top:100px'>" +
+      "<h2>Acceso denegado</h2>" +
+      "<p>Contraseña incorrecta.</p>" +
+      "</div>";
+  }
+</script><body>
 <div class="shell"><aside><div class="brand">
     <img src="Picture1.png" alt="Redwood Capital Partners" class="logo">
 </div><nav><button class="nav active" data-view="dashboard">Resumen</button><button class="nav" data-view="companies">Empresas</button><button class="nav" data-view="pipeline">Pipeline</button></nav><div class="aside-foot">Privado y confidencial</div></aside>
